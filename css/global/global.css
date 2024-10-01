@@ -136,6 +136,8 @@ footer p {
 
 .footer-links {
   display: flex;
+  align-items: center;
+  
   gap: 2rem;
 }
 
@@ -229,6 +231,7 @@ footer p {
   .footer-socials {
     flex: 1;
     justify-content: center;
+    margin: 1rem 0;
   }
 
   .back-to-top {
@@ -254,7 +257,7 @@ footer p {
   .footer-links,
   .footer-socials,
   .footer-info {
-    margin-bottom: 0;
+    margin: 0;
   }
 }
 
