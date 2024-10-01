@@ -1,0 +1,85 @@
+.machines-overview {
+  padding: 2rem 0;
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.machines-overview h1 {
+  margin-bottom: 1rem;
+}
+
+.machines-overview p {
+  font-size: var(--font-size-quaternary);
+  color: var(--tertiary-text-color);
+}
+
+.machine-cards-list {
+  gap: 2rem;
+  margin: 2rem 0;
+  padding-left: 0;
+}
+
+.card {
+  background-color: var(--secondary-text-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+  border-radius: 0.625rem;
+  width: 15rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+  box-shadow: 0 1px 10px var(--primary-background-color);
+}
+
+.card-img-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.card img {
+  border-radius: 0.625rem;
+  width: 14.5rem;
+  height: 9.7rem; 
+  object-fit: cover;
+}
+
+.card h2 {
+  font-size: var(--font-size-tertiary);
+  margin-top: 1rem;
+  color: var(--primary-background-color);
+}
+
+.card p {
+  font-size: var(--font-size-quinary);
+  color: var(--tertiary-text-color);
+  margin: 1rem 0;
+}
+
+.card button {
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .card {
+    width: 16.5rem;
+  }
+
+  .machine-cards-list {
+    width: 90%;
+    margin: auto;
+    gap: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card {
+    width: 17.5rem;
+  }
+
+  .card:hover {
+    transform: scale(1.03);
+  }
+}

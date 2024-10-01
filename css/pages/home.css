@@ -1,0 +1,212 @@
+/* Hero Section */
+.hero {
+  padding: 1rem 0 2rem 0;
+  background-color: var(--primary-background-color);
+  border: none;
+  border-top: 1px solid var(--tertiary-text-color);
+}
+
+.hero-container {
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.hero-text {
+  text-align: center;
+  margin-right: 0.5rem;
+}
+
+.hero h1 {
+  font-size: var(--font-size-primary);
+  font-weight: 900;
+  color: var(--primary-text-color);
+  margin-top: 0;
+  text-align: center;
+}
+
+.hero p {
+  color: var(--secondary-text-color);
+  font-size: var(--font-size-quaternary);
+}
+
+.hero button {
+  display: inline-block;
+  margin: 1rem 0 2rem 0;
+  text-wrap: nowrap;
+}
+
+.hero img {
+  object-fit: cover;
+  align-self: flex-start;
+  border-radius: 0.625rem;
+  border: 2px solid var(--secondary-text-color);
+}
+
+/* Advantages Section */
+.advantages {
+  margin-bottom: 5rem;
+}
+
+.advantages-container {
+  width: 85%;
+  gap: 2rem;
+}
+
+.advantages h2 {
+  margin: 3rem 0;
+  text-align: center;
+}
+
+.adv-img-container {
+  width: 10rem;
+  text-align: center;
+}
+
+.advantages img {
+  border-radius: 10px;
+  width: 10rem;
+  height: 10rem;
+}
+
+.advantages figcaption {
+  font-size: var(--font-size-quaternary);
+  color: var(--tertiary-text-color);
+  margin: 0.5rem 0 1.5rem 0;
+}
+
+/* Quote */
+.quote {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: var(--secondary-text-color);
+  padding: 4rem 0;
+}
+
+.quote-box {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.quote p {
+  color: var(--tertiary-text-color);
+  font-size: var(--font-size-tertiary);
+  font-weight: 350;
+  text-align: justify;
+}
+
+.quote span {
+  font-size: var(--font-size-quinary);
+  font-weight: 500;
+  text-align: end;
+  margin-top: 0.8rem;
+}
+
+/* Call to action */
+.call-to-action {
+  width: 70%;
+  max-width: 900px;
+  margin: 5rem auto;
+  padding: 2.5rem 2rem;
+  border-radius: 0.4rem;
+  background-color: var(--secondary-background-color);
+  gap: 2rem;
+}
+
+.call-to-action-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.call-to-action-text p {
+  font-size: var(--font-size-quinary);
+  color: var(--secondary-text-color);
+  margin: 0;
+  letter-spacing: 0.05rem;
+}
+
+.call-to-action-text h3 {
+  font-size: var(--font-size-tertiary);
+  color: var(--primary-text-color);
+  margin: 1rem 0;
+}
+
+.call-to-action button {
+  text-wrap: nowrap;
+}
+
+@media (min-width: 768px) {
+  .advantages-container {
+    max-width: 800px;
+  }
+
+  .hero {
+    padding: 4rem 0;
+  }
+
+  .hero-container {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .hero-text,
+  .hero-img {
+    flex: 1 1 0;
+    text-align: left;
+  }
+
+  .hero h1 {
+    text-align: left;
+  }
+
+  .inspire-quote {
+    padding: 5.5rem 4rem;
+  }
+
+  .inspire-quote blockquote, .inspire-quote span { 
+    width: 80%;
+  }
+
+  .inspire-quote span {
+    font-weight: bold;
+    margin-top: 0.4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero a:hover {
+    background-color: var(--primary-text-color);
+    color: var(--secondary-background-color);
+  }
+
+  .hero a:focus {
+    transform: translate(0.1rem, 0.1rem);
+  }
+
+  .inspire-quote {
+    padding: 6.5rem 5rem;
+  }
+
+  .inspire-quote blockquote, .inspire-quote span { 
+    width: 60%;
+  }
+
+  .call-to-action {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 3.5rem 2.8rem;
+  }
+
+  .call-to-action-text h3 {
+    margin: 0.2rem 0;
+  }
+
+  .call-to-action-text {
+    text-align: left;
+  }
+}
