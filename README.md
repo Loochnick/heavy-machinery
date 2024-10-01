@@ -1,3 +1,5 @@
+https://loochnick.github.io/heavy-machinery/contacts.html
+
 ## Project: HeavyMachinery Website
 
 ### Introduction
