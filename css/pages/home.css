@@ -87,7 +87,7 @@
 .quote-box {
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 75%;
   max-width: 900px;
   margin: 0 auto;
 }
@@ -108,7 +108,7 @@
 
 /* Call to action */
 .call-to-action {
-  width: 70%;
+  width: 75%;
   max-width: 900px;
   margin: 5rem auto;
   padding: 2.5rem 2rem;
@@ -164,17 +164,8 @@
     text-align: left;
   }
 
-  .inspire-quote {
-    padding: 5.5rem 4rem;
-  }
-
-  .inspire-quote blockquote, .inspire-quote span { 
+  .quote-box, .call-to-action {
     width: 80%;
-  }
-
-  .inspire-quote span {
-    font-weight: bold;
-    margin-top: 0.4rem;
   }
 }
 
@@ -188,18 +179,14 @@
     transform: translate(0.1rem, 0.1rem);
   }
 
-  .inspire-quote {
-    padding: 6.5rem 5rem;
-  }
-
-  .inspire-quote blockquote, .inspire-quote span { 
-    width: 60%;
-  }
-
   .call-to-action {
     flex-direction: row;
     justify-content: space-around;
     padding: 3.5rem 2.8rem;
+  }
+
+  .quote-box, .call-to-action {
+    width: 75%;
   }
 
   .call-to-action-text h3 {
